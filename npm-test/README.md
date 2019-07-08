@@ -1,0 +1,1 @@
+# test react-comp local by npm install for developer
