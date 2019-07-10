@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {inject, observer} from "mobx-react";
 import './index.less';
+import zhangjiajie from '../static/img/zhangjiajie.jpg'
 
 @inject('UI')
 @observer
@@ -31,8 +32,9 @@ class InputComp extends Component {
             placeholder={placeholder}
             onChange={this.handleChange}
           />
-          <div>value change to {this.state.value}</div>
-          <div>value from mobx store {inputValue}</div>
+          <div style={{color:'red'}}>value change to {this.state.value}</div>
+          <div className="testClass">value from mobx store {inputValue}</div>
+          <img src={zhangjiajie} />
       </div>
     );
   }

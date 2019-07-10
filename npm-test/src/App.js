@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-import ReactComp from 'ReactComp';
+import 'react-comp/dist/main.css'
+import ReactComp from 'react-comp';
 
 class App extends Component {
   render() {
